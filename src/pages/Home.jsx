@@ -64,7 +64,7 @@ const Home = () => {
         <h2 className='intertext  text-[32px] md:text-[56px] tracking-[-2.24px] md:tracking-[-3.92px] text-black font-medium'>
           <span className='text-[#4A68FE]'>About</span> Kon Consultants
         </h2>
-        <div className="w-full relative bg-[url('/images/about.png')] bg-[url('/images/aboutmobile.png')] h-[516.238px] bg-cover bg-center rounded-[20px] p-[25px] md:p-[35px]">
+        <div className="w-full relative md:bg-[url('/images/about.png')] bg-[url('/images/aboutmobile.png')] h-[516.238px] bg-cover bg-center rounded-[20px] p-[25px] md:p-[35px]">
         <div className='h-full flex flex-col md:flex-row justify-end md:justify-between items-end gap-[10px] md:gap-[20px]'>
           <p className='order-2 md:order-1 textinter text-[16px] md:text-[24px] tracking-[-1.12px] md:tracking-[-1.68px] text-white md:leading-[31.2px] w-full md:w-[800px]'>
             At Kon Consultants, we believe in rolling up our sleeves and working alongside you, offering pragmatic, data-driven insights that drive your business forward. With over 9 years of expertise, we guide our clients towards sustainable success.
