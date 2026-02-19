@@ -3,6 +3,7 @@ import { Link } from "react-router";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isServiceOpen, setIsServiceOpen] = useState(false);
 
   return (
     <div className='w-full flex bg-white/40 px-[20px] md:px-[100px] py-[15px] backdrop-blur-[12.7px] border-b-[1px] border-[#D7D7D7] z-50'>
@@ -21,12 +22,37 @@ const Header = () => {
                 <a href="#about" className="text-black/50 hover:text-[#4A68FE] transition ">
                     About
                 </a>
-                <a href="#services" className="text-black/50 hover:text-[#4A68FE]  transition">
-                    Services
-                </a>
-                <a href="#packages" className="text-black/50 hover:text-[#4A68FE] transition">
+                <div className="relative group">
+  <button className="text-black/50 hover:text-[#4A68FE] transition flex items-center gap-1">
+    Services
+    <span className="text-sm">▾</span>
+  </button>
+
+  <div className="
+    absolute -left-20 mt-3 w-60
+     bg-white rounded-xl shadow-lg
+    opacity-0 invisible
+    group-hover:opacity-100 group-hover:visible
+    transition-all duration-300
+    z-50
+  ">
+    <div className="flex flex-col py-3 text-[16px]">
+      <Link to="/managementconsulting" className="px-5 py-2 hover:bg-[#4A68FE] hover:text-white transition">
+        Management Consulting
+      </Link>
+      <Link to="/assurance" className="px-5 py-2 hover:bg-[#4A68FE] hover:text-white transition">
+        Assurance
+      </Link>
+      <Link to="/riskadvisory" className="px-5 py-2 hover:bg-[#4A68FE] hover:text-white transition">
+        Risk Advisory
+      </Link>
+    </div>
+  </div>
+</div>
+                
+                <Link to="/packages" className="text-black/50 hover:text-[#4A68FE] transition">
                     Packages
-                </a>
+                </Link>
                 </div>
 
                 {/* Mobile Button */}
@@ -50,21 +76,49 @@ const Header = () => {
           About
         </a>
 
-        <a
-          href="#services"
-          onClick={() => setIsOpen(false)}
-          className="text-[#4A68FE] hover:text-black transition "
-        >
-          Services
-        </a>
+        <div>
+  <button
+    onClick={() => setIsServiceOpen(!isServiceOpen)}
+    className="text-[#4A68FE] flex justify-between w-full"
+  >
+    Services
+    <span>{isServiceOpen ? "−" : "+"}</span>
+  </button>
 
-        <a
-          href="#packages"
+  {isServiceOpen && (
+    <div className="flex flex-col pl-4 mt-2 space-y-2 text-[16px]">
+      <Link
+        to="/managementconsulting"
+        onClick={() => setIsOpen(false)}
+        className="hover:text-black transition"
+      >
+        Management Consulting
+      </Link>
+      <Link
+        to="/assurance"
+        onClick={() => setIsOpen(false)}
+        className="hover:text-black transition"
+      >
+        Assurance
+      </Link>
+      <Link
+        to="/riskadvisory"
+        onClick={() => setIsOpen(false)}
+        className="hover:text-black transition"
+      >
+        Risk Advisory
+      </Link>
+    </div>
+  )}
+</div>
+
+        <Link
+          to="/packages"
           onClick={() => setIsOpen(false)}
           className="text-[#4A68FE] hover:text-black transition "
         >
           Packages
-        </a>
+        </Link>
         <button className='order-2 intertext px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
                     Contact Us
 

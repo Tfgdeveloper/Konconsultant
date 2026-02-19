@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from '../components/Slider'
+import ContactForm from '../components/ContactForm'
 
 
 const Home = () => {
@@ -166,8 +167,22 @@ const Home = () => {
         
         </div>
       </section>
+
+      {/* Contact */}
+      <section id="contact" className='w-full px-[20px] md:px-[100px] overflow-hidden '>
+        <div className='w-full mx-auto max-w-[1440px] flex flex-col pb-[100px] justify-center items-center gap-[50px]'>
+        <div className='flex flex-col gap-[10px]'>
+        <h2 className='intertext text-center text-[32px] md:text-[56px] tracking-[-2.24px] md:tracking-[-3.92px] text-black font-medium'>
+        <span className='text-[#4A68FE]'>Contact </span> Us
+        </h2>
+        </div>
+       <ContactForm/>
+      
+        
+        </div>
+      </section>
       {/* Before Footer CTA */}
-      <section id="contact" className='w-full px-[20px] md:px-[100px] '>
+      <section className='w-full px-[20px] md:px-[100px] '>
         <div className='w-full mx-auto max-w-[1440px] flex'>
 
         

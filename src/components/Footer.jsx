@@ -39,17 +39,17 @@ const Footer = () => {
                 <div className='md:w-[79px] flex flex-col gap-[15px]'>
                     <Link className='intertext text-white text-[20px] md:text-[22px] font-normal tracking-[-1.4px] md:tracking-[-1.54px]'>Home</Link>
                     <div className='flex flex-col gap-[10px]'>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>About</Link>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Services</Link>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Packages</Link>
+                        <Link to="#about" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>About</Link>
+                        <Link to="#services" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Services</Link>
+                        <Link to="/packages" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Packages</Link>
                     </div>
                 </div>
                 <div className='md:w-[250px] flex flex-col gap-[15px]'>
                     <Link className='intertext text-white text-[20px] md:text-[22px] font-normal tracking-[-1.4px] md:tracking-[-1.54px]'>Services</Link>
                     <div className='flex flex-col gap-[10px]'>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Management Consulting</Link>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Assurance</Link>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Risk Advisory</Link>
+                        <Link to="/managementconsulting" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Management Consulting</Link>
+                        <Link to="/assurance" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Assurance</Link>
+                        <Link to="/riskadvisory" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Risk Advisory</Link>
                     </div>
                 </div>
                 <div className='md:w-[340px] flex flex-col gap-[15px]'>

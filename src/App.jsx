@@ -4,6 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Packages from "./pages/Packages";
+import TermsandConditions from "./pages/TermsandConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import RiskAdvisory from "./pages/RiskAdvisory";
+import Assurance from "./pages/Assurance";
+import ManagementConsulting from "./pages/ManagementConsulting";
 
 
 
@@ -15,6 +21,12 @@ ReactDOM.createRoot(root).render(
         <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/packages" element={<Packages />} />
+          <Route path="/managementconsulting" element={<ManagementConsulting/>} />
+          <Route path="/assurance" element={<Assurance/>} />
+          <Route path="/riskadvisory" element={<RiskAdvisory/>} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/termsandconditions" element={<TermsandConditions />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

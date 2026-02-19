@@ -8,7 +8,7 @@ const cards = [
 
 export default function Slider() {
   return (
-    <div className="w-full py-12">
+    <div className="w-full ">
 
       {/* 🔹 Desktop Slider */}
       <div className="hidden md:block overflow-hidden group">
