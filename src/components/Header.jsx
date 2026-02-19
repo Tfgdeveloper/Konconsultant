@@ -18,15 +18,15 @@ const Header = () => {
                 <div className="">
                 
                 <div className="intertext hidden md:flex space-x-8 text-[18px] tracking-[-0.72px]">
-                <Link to="/" className="text-black/50 hover:text-[#4A68FE] transition ">
+                <a href="#about" className="text-black/50 hover:text-[#4A68FE] transition ">
                     About
-                </Link>
-                <Link to="/" className="text-black/50 hover:text-[#4A68FE]  transition">
+                </a>
+                <a href="#services" className="text-black/50 hover:text-[#4A68FE]  transition">
                     Services
-                </Link>
-                <Link to="/" className="text-black/50 hover:text-[#4A68FE] transition">
+                </a>
+                <a href="#packages" className="text-black/50 hover:text-[#4A68FE] transition">
                     Packages
-                </Link>
+                </a>
                 </div>
 
                 {/* Mobile Button */}
@@ -40,37 +40,41 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-    <div className="md:hidden w-full bg-[#4A68FE] absolute left-0 top-19 z-50">
+    <div className="md:hidden w-full bg-white absolute left-0 top-18 z-50">
       <div className="intertext flex flex-col px-6 py-4 space-y-3 text-[18px] font-normal tracking-[-0.72px]">
-        <Link
-          to="/"
+        <a
+          href="#about"
           onClick={() => setIsOpen(false)}
-          className="text-white hover:text-black transition "
+          className="text-[#4A68FE] hover:text-black transition "
         >
           About
-        </Link>
+        </a>
 
-        <Link
-          to="/"
+        <a
+          href="#services"
           onClick={() => setIsOpen(false)}
-          className="text-white hover:text-black transition "
+          className="text-[#4A68FE] hover:text-black transition "
         >
           Services
-        </Link>
+        </a>
 
-        <Link
-          to="/"
+        <a
+          href="#packages"
           onClick={() => setIsOpen(false)}
-          className="text-white hover:text-black transition "
+          className="text-[#4A68FE] hover:text-black transition "
         >
           Packages
-        </Link>
+        </a>
+        <button className='order-2 intertext px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
+                    Contact Us
+
+                </button>
       </div>
     </div>
   )}
             </div>
             {/* Button */}
-            <div className="order-2 md:order-3">
+            <div className="hidden md:flex order-2 md:order-3">
                 <button className='order-2 intertext px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
                     Contact Us
 
