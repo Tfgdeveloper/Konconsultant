@@ -63,8 +63,8 @@ const Footer = () => {
             </div>
              <div className='w-full flex flex-col md:flex-row gap-[30px] md:gap-[50px] justify-between'>
                 <div className='flex flex-row gap-[50px]'>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Privacy policy</Link>
-                        <Link to="/" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Terms</Link>
+                        <Link to="/privacypolicy" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Privacy policy</Link>
+                        <Link to="/termsandconditions" className='intertext text-white text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px]'>Terms</Link>
                         
                 </div>
                 <span className='textinter text-[16px] md:text-[18px] font-normal tracking-[-0.48px] md:tracking-[-0.54px] text-white font-normal leading-none'>

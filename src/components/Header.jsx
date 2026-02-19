@@ -6,7 +6,7 @@ const Header = () => {
     const [isServiceOpen, setIsServiceOpen] = useState(false);
 
   return (
-    <div className='w-full flex bg-white/40 px-[20px] md:px-[100px] py-[15px] backdrop-blur-[12.7px] border-b-[1px] border-[#D7D7D7] z-50'>
+    <div className='relative w-full flex bg-white/40 px-[20px] md:px-[100px] py-[15px] backdrop-blur-[12.7px] border-b-[1px] border-[#D7D7D7] z-50'>
         <div className='w-full flex justify-between items-center mx-auto max-w-[1440px]'>
             {/* Logo */}
             <div className="order-1" >
@@ -19,7 +19,7 @@ const Header = () => {
                 <div className="">
                 
                 <div className="intertext hidden md:flex space-x-8 text-[18px] tracking-[-0.72px]">
-                <a href="#about" className="text-black/50 hover:text-[#4A68FE] transition ">
+                <a href="/#about" className="text-black/50 hover:text-[#4A68FE] transition ">
                     About
                 </a>
                 <div className="relative group">
@@ -34,9 +34,9 @@ const Header = () => {
     opacity-0 invisible
     group-hover:opacity-100 group-hover:visible
     transition-all duration-300
-    z-50
+    z-[100]
   ">
-    <div className="flex flex-col py-3 text-[16px]">
+    <div className="flex flex-col py-3 text-[16px] z-[100]">
       <Link to="/managementconsulting" className="px-5 py-2 hover:bg-[#4A68FE] hover:text-white transition">
         Management Consulting
       </Link>
@@ -69,7 +69,7 @@ const Header = () => {
     <div className="md:hidden w-full bg-white absolute left-0 top-18 z-50">
       <div className="intertext flex flex-col px-6 py-4 space-y-3 text-[18px] font-normal tracking-[-0.72px]">
         <a
-          href="#about"
+          href="/#about"
           onClick={() => setIsOpen(false)}
           className="text-[#4A68FE] hover:text-black transition "
         >
@@ -86,7 +86,7 @@ const Header = () => {
   </button>
 
   {isServiceOpen && (
-    <div className="flex flex-col pl-4 mt-2 space-y-2 text-[16px]">
+    <div className="flex flex-col pl-4 mt-2 space-y-2 text-[16px] ">
       <Link
         to="/managementconsulting"
         onClick={() => setIsOpen(false)}
@@ -129,10 +129,10 @@ const Header = () => {
             </div>
             {/* Button */}
             <div className="hidden md:flex order-2 md:order-3">
-                <button className='order-2 intertext px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
+                <a href="/#contact" className='order-2 intertext px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
                     Contact Us
 
-                </button>
+                </a>
             </div>
 
         </div>

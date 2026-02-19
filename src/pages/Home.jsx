@@ -45,15 +45,15 @@ const Home = () => {
           <div className='w-full bg-[#4A68FE] rounded-[17px] flex flex-col md:flex-row justify-between items-center p-[30px] gap-[30px]'>
             <div className='md:w-1/3 flex flex-col items-center gap-[20px]'>
               <img src="images/Group 1.png" className=''/>
-              <span className='intertext text-[26px] tracking-[-1.82px] md:text-[36px] text-white md:tracking-[-2.52px] font-normal'>STRATEGY</span>
+              <span className='intertext text-[26px] tracking-[-1.82px] md:text-[36px] text-white md:tracking-[-2.52px] font-normal'>Strategy</span>
             </div>
             <div className='md:w-1/3 flex flex-col items-center gap-[20px]'>
               <img src="images/Group 2.png" className=''/>
-              <span className='intertext text-[26px] tracking-[-1.82px] md:text-[36px] text-white md:tracking-[-2.52px]font-normal'>VALIDATION</span>
+              <span className='intertext text-[26px] tracking-[-1.82px] md:text-[36px] text-white md:tracking-[-2.52px]font-normal'>Validation</span>
             </div>
             <div className='md:w-1/3 flex flex-col items-center gap-[20px]'>
               <img src="images/Group 3.png" className=''/>
-              <span className='intertext text-[26px] tracking-[-1.82px] md:text-[36px] text-white md:tracking-[-2.52px] font-normal'>EXECUTION</span>
+              <span className='intertext text-[26px] tracking-[-1.82px] md:text-[36px] text-white md:tracking-[-2.52px] font-normal'>Execution</span>
             </div>
 
           </div>
@@ -115,7 +115,7 @@ const Home = () => {
                 <h4 className='intertext text-black text-[26px] tracking-[-1.82px] leading-[33.8px] font-medium'>
                   Assurance
                 </h4>
-                <p className='w-[310px] intertext text-black/60 text-[18px] tracking-[-0.54px]'>
+                <p className='w-[315px] intertext text-black/60 text-[18px] tracking-[-0.54px]'>
                   We combine in-depth industry expertise with precision-driven service offerings.
                 </p>
 
