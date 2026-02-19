@@ -5,7 +5,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='w-full flex bg-white/40 px-[20px] md:px-[100px] py-[15px] backdrop-blur-[12.7px] border-b-[1px] border-[#D7D7D7]'>
+    <div className='w-full flex bg-white/40 px-[20px] md:px-[100px] py-[15px] backdrop-blur-[12.7px] border-b-[1px] border-[#D7D7D7] z-50'>
         <div className='w-full flex justify-between items-center mx-auto max-w-[1440px]'>
             {/* Logo */}
             <div className="order-1" >
@@ -14,7 +14,7 @@ const Header = () => {
                 </Link>
             </div>
             {/* menu */}
-            <div className="order-3 md:order-2">
+            <div className="order-3 md:order-2 z-50">
                 <div className="">
                 
                 <div className="intertext hidden md:flex space-x-8 text-[18px] tracking-[-0.72px]">
@@ -40,7 +40,7 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-    <div className="md:hidden w-full bg-[#4A68FE] absolute left-0 top-19">
+    <div className="md:hidden w-full bg-[#4A68FE] absolute left-0 top-19 z-50">
       <div className="intertext flex flex-col px-6 py-4 space-y-3 text-[18px] font-normal tracking-[-0.72px]">
         <Link
           to="/"
