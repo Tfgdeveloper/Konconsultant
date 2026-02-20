@@ -37,7 +37,7 @@ export default function Slider() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/30 flex items-end p-4">
-                <h3 className="intertext text-white text-[26px] tracking-[-1.82px] leading-[33.8px] font-medium">
+                <h3 className=" text-white text-[26px] tracking-[-1.82px] leading-[33.8px] font-medium">
                   {card.title}
                 </h3>
               </div>
@@ -66,7 +66,7 @@ export default function Slider() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30 flex items-end p-[17px]">
-              <h3 className="intertext text-white text-[18.2px] tracking-[-1.274px] leading-[23.66px] font-medium">
+              <h3 className=" text-white text-[18.2px] tracking-[-1.274px] leading-[23.66px] font-medium">
                 {card.title}
               </h3>
             </div>

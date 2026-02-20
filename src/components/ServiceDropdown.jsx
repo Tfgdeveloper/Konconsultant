@@ -32,17 +32,16 @@ export default function ServiceDropdown({ value, onChange }) {
         onClick={() => setOpen(!open)}
         className="
           w-full px-5 py-4 rounded-[16px]
-          bg-gradient-to-br from-white to-[#F0F0F0]
-          border border-transparent
-          focus:border-[#464646]
-          text-left
-          text-[20px] font-medium
-          tracking-[-1.4px]
-          flex items-center justify-between
-          transition-all duration-300
+bg-gradient-to-br from-white to-[#F0F0F0]
+border border-transparent
+focus:border-[#464646]
+text-black/50 focus:text-black
+font-['Inter'] text-[20px] font-medium
+leading-[130%] tracking-[-1.4px]
+outline-none transition-all duration-300 flex items-center justify-between
         "
       >
-        <span className={value ? "text-black" : "text-black/50"}>
+        <span className={value ? "text-black" : "text-black/30"}>
           {value || "What service are you interested in?"}
         </span>
 

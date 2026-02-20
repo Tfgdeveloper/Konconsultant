@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @import "swiper/css";
-.intertext {
+:root{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 
 @keyframes marquee {
   0% {

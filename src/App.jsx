@@ -10,6 +10,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RiskAdvisory from "./pages/RiskAdvisory";
 import Assurance from "./pages/Assurance";
 import ManagementConsulting from "./pages/ManagementConsulting";
+import ScrollManager from "./components/ScrollManager";
 
 
 
@@ -19,6 +20,7 @@ function App() {
 ReactDOM.createRoot(root).render(
       <BrowserRouter>
         <Header/>
+        <ScrollManager />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/packages" element={<Packages />} />

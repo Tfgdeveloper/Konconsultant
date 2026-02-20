@@ -18,7 +18,7 @@ const Header = () => {
             <div className="order-3 md:order-2 z-50">
                 <div className="">
                 
-                <div className="intertext hidden md:flex space-x-8 text-[18px] tracking-[-0.72px]">
+                <div className=" hidden md:flex space-x-8 text-[18px] tracking-[-0.72px]">
                 <a href="/#about" className="text-black/50 hover:text-[#4A68FE] transition ">
                     About
                 </a>
@@ -67,7 +67,7 @@ const Header = () => {
                 {/* Mobile Menu */}
                 {isOpen && (
     <div className="md:hidden w-full bg-white absolute left-0 top-18 z-50">
-      <div className="intertext flex flex-col px-6 py-4 space-y-3 text-[18px] font-normal tracking-[-0.72px]">
+      <div className=" flex flex-col px-6 py-4 space-y-3 text-[18px] font-normal tracking-[-0.72px]">
         <a
           href="/#about"
           onClick={() => setIsOpen(false)}
@@ -119,20 +119,20 @@ const Header = () => {
         >
           Packages
         </Link>
-        <button className='order-2 intertext px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
+        <Link to="#contact" className='order-2  px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
                     Contact Us
 
-                </button>
+                </Link>
       </div>
     </div>
   )}
             </div>
             {/* Button */}
             <div className="hidden md:flex order-2 md:order-3">
-                <a href="/#contact" className='order-2 intertext px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
+                <Link to="#contact" className='order-2  px-[20px] py-[10px] bg-[#4A68FE] rounded-full text-white shadow-[inset_3px_3px_4px_0_rgba(255,255,255,0.30)] font-medium text-[18px] hover:scale-110 transition tracking-[-0.72px]'>
                     Contact Us
 
-                </a>
+                </Link>
             </div>
 
         </div>
