@@ -95,7 +95,7 @@ const Home = () => {
           <div className='w-full flex flex-col md:flex-row gap-[25px]'>
             <div className='relative md:w-1/3 rounded-[26px] bg-[linear-gradient(135deg,#F0F0F0_100%,#FFF_0%)] md:p-[35px] p-[20px] md:h-[384px] h-[280px] flex flex-col justify-end items-end
             shadow-[3px_3px_4px_0_rgba(255,255,255,0.30)_inset,-3px_-3px_4px_0_rgba(129,129,129,0.50)_inset,-81px_81px_162px_0_rgba(129,129,129,0.20),81px_-81px_162px_0_rgba(129,129,129,0.20)]'>
-              <img src='images/Online consulting-rafiki 1.png' className='md:w-[323px] md:h-[323px] w-[224px] h-[250px] absolute md:right-[-0.333px] md:top-[-88.708px] left-[0px] top-[-65.708px]'/>
+              <img src='images/Online consulting-rafiki 1.png' className='md:w-[323px] md:h-[323px] w-[224px] h-[250px] absolute md:right-[-50.333px] md:top-[-80.708px] md:left-[50px] left-[0px] top-[-65.708px]'/>
               <div className='w-full flex flex-col gap-[10px]'>
                 <h4 className='intertext text-black text-[26px] tracking-[-1.82px] leading-[33.8px] font-medium'>
                   Management Consulting
@@ -110,7 +110,7 @@ const Home = () => {
             </div>
             <div className='relative md:w-1/3 rounded-[26px] bg-[linear-gradient(135deg,#F0F0F0_100%,#FFF_0%)] md:p-[35px] p-[20px] md:h-[384px] h-[280px] flex justify-end items-end
             shadow-[3px_3px_4px_0_rgba(255,255,255,0.30)_inset,-3px_-3px_4px_0_rgba(129,129,129,0.50)_inset,-81px_81px_162px_0_rgba(129,129,129,0.20),81px_-81px_162px_0_rgba(129,129,129,0.20)]'>
-              <img src='images/Investment data-rafiki 1.png' className='md:w-[323px] md:h-[323px] w-[224px] h-[250px] absolute md:right-[-0.333px] md:top-[-88.708px] left-[0px] top-[-85.708px]'/>
+              <img src='images/Investment data-rafiki 1.png' className='md:w-[323px] md:h-[323px] w-[224px] h-[250px] absolute md:right-[-0.333px] md:top-[-88.708px] md:left-[50px] left-[0px] top-[-85.708px]'/>
               <div className='w-full flex flex-col gap-[10px]'>
                 <h4 className='intertext text-black text-[26px] tracking-[-1.82px] leading-[33.8px] font-medium'>
                   Assurance
@@ -125,7 +125,7 @@ const Home = () => {
             </div>
             <div className='relative md:w-1/3 rounded-[26px] bg-[linear-gradient(135deg,#F0F0F0_100%,#FFF_0%)] md:p-[35px] p-[20px] md:h-[384px] h-[280px] flex justify-end items-end
             shadow-[3px_3px_4px_0_rgba(255,255,255,0.30)_inset,-3px_-3px_4px_0_rgba(129,129,129,0.50)_inset,-81px_81px_162px_0_rgba(129,129,129,0.20),81px_-81px_162px_0_rgba(129,129,129,0.20)]'>
-              <img src='images/Finance-rafiki 1.png' className='md:w-[323px] md:h-[323px] w-[224px] h-[250px] absolute md:right-[-0.333px] md:top-[-88.708px] left-[0px] top-[-65.708px]'/>
+              <img src='images/Finance-rafiki 1.png' className='md:w-[323px] md:h-[323px] w-[224px] h-[250px] absolute md:right-[-0.333px] md:top-[-88.708px] md:left-[10px] left-[0px] top-[-65.708px]'/>
               <div className='w-full flex flex-col gap-[10px]'>
                 <h4 className='intertext text-black text-[26px] tracking-[-1.82px] leading-[33.8px] font-medium'>
                   Risk Advisory
